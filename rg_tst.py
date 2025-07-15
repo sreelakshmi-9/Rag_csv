@@ -51,7 +51,7 @@ if uploaded_file is not None:
     vectorstore = FAISS.from_texts(text_data, embedding_model)
 
     # ✅ Load Gemini LLM
-    llm = ChatGoogleGenerativeAI(model="gemini-1.5-pro")
+    llm = ChatGoogleGenerativeAI(model="gemini-pro")
 
     # ✅ Simple memory (Gemini does not support full message history)
     memory = ConversationBufferMemory(memory_key="chat_history", return_messages=False)
