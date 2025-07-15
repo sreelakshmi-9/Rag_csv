@@ -90,11 +90,11 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 os.environ["GOOGLE_API_KEY"] = "AIzaSyBTZcmeLHgohQetHIbSJ1jKJZg5mxDTsPM"  # Replace with your actual key
 
 # ✅ Imports for LangChain
-from langchain_community.vectorstores import FAISS
-from langchain_community.embeddings import HuggingFaceEmbeddings
-from langchain.chains import ConversationalRetrievalChain
-from langchain.memory import ConversationBufferMemory
-from langchain_google_genai import ChatGoogleGenerativeAI
+# from langchain_community.vectorstores import FAISS
+# from langchain_community.embeddings import HuggingFaceEmbeddings
+# from langchain.chains import ConversationalRetrievalChain
+# from langchain.memory import ConversationBufferMemory
+# from langchain_google_genai import ChatGoogleGenerativeAI
 
 # ✅ Configure Streamlit UI
 st.set_page_config(page_title="CSV Q&A Chatbot", layout="wide")
