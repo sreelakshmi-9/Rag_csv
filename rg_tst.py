@@ -74,7 +74,7 @@ import streamlit as st
 import pandas as pd
 import os
 import streamlit as st
-st.set_page_config(page_title="CSV Q&A Chatbot", layout="wide")
+#st.set_page_config(page_title="CSV Q&A Chatbot", layout="wide")
 
 import pandas as pd
 import os
