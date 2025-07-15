@@ -56,7 +56,7 @@ if uploaded_file is not None:
 #     model="gemini-1.5-pro",
 #     convert_system_message_to_human=True
 # )
-    llm = ChatGoogleGenerativeAI(
+      llm = ChatGoogleGenerativeAI(
     model="gemini-1.5-pro",
     convert_system_message_to_human=True
 )
