@@ -61,7 +61,7 @@ if uploaded_file is not None:
     convert_system_message_to_human=True
 )
 
-   memory = ConversationBufferMemory(memory_key="chat_history", return_messages=True)
+    memory = ConversationBufferMemory(memory_key="chat_history", return_messages=True)
 
 
 
