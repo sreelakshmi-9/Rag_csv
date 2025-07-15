@@ -73,6 +73,18 @@ Author: Sree
 import streamlit as st
 import pandas as pd
 import os
+import streamlit as st
+st.set_page_config(page_title="CSV Q&A Chatbot", layout="wide")
+
+import pandas as pd
+import os
+
+from langchain_community.vectorstores import FAISS
+from langchain_community.embeddings import HuggingFaceEmbeddings
+from langchain.chains import ConversationalRetrievalChain
+from langchain.memory import ConversationBufferMemory
+from langchain_google_genai import ChatGoogleGenerativeAI
+
 
 # ✅ HARD-CODED API KEY (⚠️ Do NOT use in public repositories)
 os.environ["GOOGLE_API_KEY"] = "AIzaSyBTZcmeLHgohQetHIbSJ1jKJZg5mxDTsPM"  # Replace with your actual key
