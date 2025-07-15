@@ -74,10 +74,10 @@ if uploaded_file is not None:
         retriever=vectorstore.as_retriever(),
         memory=memory
     )
-retriever = vectorstore.as_retriever()
-docs = retriever.get_relevant_documents("sample question like total rows")
-st.write("🔎 Retrieved docs:")
-st.write(docs)
+   retriever = vectorstore.as_retriever()
+   docs = retriever.get_relevant_documents("sample question like total rows")
+   st.write("🔎 Retrieved docs:")
+   st.write(docs)
 
     # ✅ Chat input
     st.subheader("💬 Ask your CSV a question")
