@@ -4,6 +4,9 @@ Created on Fri Mar 21 22:37:03 2025
 
 @author: Sree
 """
+from langchain.vectorstores import FAISS
+from langchain.embeddings import HuggingFaceEmbeddings
+
 
 import streamlit as st
 import pandas as pd
