@@ -52,10 +52,17 @@ if uploaded_file is not None:
 
     # ✅ Load Gemini LLM
    # llm = ChatGoogleGenerativeAI(model="gemini-pro")
+#     llm = ChatGoogleGenerativeAI(
+#     model="gemini-1.5-pro",
+#     convert_system_message_to_human=True
+# )
     llm = ChatGoogleGenerativeAI(
     model="gemini-1.5-pro",
     convert_system_message_to_human=True
 )
+
+memory = ConversationBufferMemory(memory_key="chat_history", return_messages=True)
+
 
 
     # ✅ Simple memory (Gemini does not support full message history)
